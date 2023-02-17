@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "0d492cd3-84dc-4e82-afa3-92f64aaad34b",
+		"name": "api user testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25906588"
+	},
+	"item": [
+		{
+			"name": "creating a new user entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "testuser",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "9999999998",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "u@user.com",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1337/User",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"User"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "newuser",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "132@fajkl.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "232gfsgsfgsgsgs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getting user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/User/1",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"User",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getting all the list of user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/User",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update an entry of user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "updated user",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:1337/User/6",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"User",
+						"6"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "dsgfag",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "23551551",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "132@fajkl.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "232gfsgsfgsgsgs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete an user by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/User/4",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"User",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
