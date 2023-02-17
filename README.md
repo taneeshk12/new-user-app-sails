@@ -40,39 +40,16 @@ To run the unit tests:
 
 
 
-**Endpoint**
 
-**Method**
 
-**Description**
 
-/user
+GET '/user' get all user
 
-GET
+GET '/user/:id' get an user by id
 
-GET
+POST '/user' set all body arguments that is 'phone,name,email and password'
 
-POST
+PUT '/user/:id' update a user by providing body arguments
 
-PUT
-
-Get all users
-
-/user/:id
-
-/user
-
-Get user by ID
-
-Create a new user
-
-/user/:id
-
-/user/:id
-
-Update an existing user
-
-Delete an existing user
-
-DELETE
+DELETE '/user/:id'  Delete an existing user
 
