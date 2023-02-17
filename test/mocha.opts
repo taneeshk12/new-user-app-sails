@@ -1,0 +1,7 @@
+--timeout 10000
+
+"scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js",
+    "test": "node ./node_modules/mocha/bin/mocha test/lifecycle.test.js test/integration/**/*.test.js"
+  }
